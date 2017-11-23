@@ -13,7 +13,18 @@ export class AboutPage {
   }
 
   textnow() {
-   this.sms.send('09957840689', 'Hello world!');
+  	var option={
+  		replaceLineBreaks: false,
+  		android: {
+  			intent: 'INTENT'
+  		}
+  	}
+	this.sms.send('09957840689', 'Hello world!', options)
+	.then(()=>{
+		alert("success");
+	},()=>{
+		alert("failed");
+	});
   }
 
 }
