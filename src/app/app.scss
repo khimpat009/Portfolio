@@ -14,16 +14,3 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-ion-navbar {
-    .toolbar-title {
-        margin-top: 18px; // Margin top from the StatusBar
-        margin-right: 22px; // Maybe you don't need this, depending how your layout looks like
-    }
-
-    // Here is how you can center your title
-    &.toolbar {
-        padding-left: 6px;
-        padding-top: 25px;
-        padding-bottom: 10px;
-    }
-}
