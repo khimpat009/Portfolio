@@ -13,7 +13,7 @@ export class AboutPage {
   }
 
   textnow() {
-  	var option={
+  	var options={
   		replaceLineBreaks: false,
   		android: {
   			intent: 'INTENT'
