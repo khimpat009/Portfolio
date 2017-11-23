@@ -1,13 +1,20 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
 
+
+  tabBarElement: any;
+  splash = true;
+
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
+
+    this.tabBarElement = document.querySelector('.tabbar');
 
   }
 
@@ -19,5 +26,14 @@ export class HomePage {
     });
     alert.present();
   }
+
+ionViewDidLoad() {
+    this.tabBarElement.style.display = 'none';
+    setTimeout(() => {
+      this.splash = false;
+      this.tabBarElement.style.display = 'flex';
+    }, 6000);
+  }
+
 
 }
