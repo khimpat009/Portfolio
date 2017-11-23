@@ -1,0 +1,8 @@
+{
+  "name": "portfolio",
+  "app_id": "de11c879",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
