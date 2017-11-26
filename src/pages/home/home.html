@@ -19,5 +19,15 @@
   <p>
 	   testing again
   </p>
-  <button ion-button color="secondary" block outline (click)="showAlert()">Secondary</button>
+  <button ion-button color="secondary" block outline (click)="submitForm()">Secondary</button>
+
+
+  <ion-list>
+    <span *ngFor="let contact of contactlist" >
+      <ion-item *ngIf="contact.displayName">
+        {{contact.displayName}} = {{contact.phoneNumbers[0].value}}
+      </ion-item>
+    </span>
+  </ion-list>
+  a
 </ion-content>

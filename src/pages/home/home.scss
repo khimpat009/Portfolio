@@ -1,5 +1,12 @@
-page-home {
+@font-face {
+  font-family: AppFont;
+  src: url("../../assets/font/Kostel_Infinity_Sans.ttf");
+}
 
+page-home {
+  body, span, button, h1, h2, h3, h4, h5, h6 {
+    font-family: 'AppFont' !important;
+  }
 }
 
 #custom-overlay {
